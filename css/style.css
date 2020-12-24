@@ -87,7 +87,7 @@ main {
     min-width: 250px;
     height: 350px;
     padding-top: 20px;
-    background-color: var(--offwhite);
+    background-color: var(--reddragon);
     text-align: center;
 }
 .main-offers--container .offers--title {
