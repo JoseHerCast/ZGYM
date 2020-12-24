@@ -1,6 +1,16 @@
 :root {
-    --warmblack: #272626;
-    --alien: linear-gradient(70deg, #13d1c8, #262626);
+    --warmblack: #201E1C;
+    --warmblackplus: #282623;
+    --offwhite: #FAF8F7;
+    --justwhite: #FFFFFF;
+    --grey: #BABABA;
+    --reddragon: #c80b21;
+    --princeblue: #181463;
+    --blueball:#2955DC;
+    --goldpride: #F3A903;
+    --vegibrown: #A56106;
+    --saiyanyellow: #F9EE54;
+    --header: linear-gradient(180deg, #A56106, #F3A903);
 }
 * {
     box-sizing: border-box;
@@ -9,31 +19,106 @@
 }
 html {
     font-size: 62.5%;
+    font-family: 'Open sans', sans-serif;
 }
 header {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px;
+    padding-top: 20px;
     width: 100%;
-    height: 250px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--alien);
+    height: 65vh;
+    background: var(--header);
 }
-.header-logo--container, .header-title {
+.header-logo--container .header-logo--zgym {
+    display: block;
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+}
+.header-logo--container .header-logo--zgym p {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--goldpride);
+    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+.header-logo--container .header-logo--zgym #Y {
+    color: var(--reddragon);
+}
+.header-logo--container .header-logo--zgym span {
+    position: relative;
+    left: 4px;
+    top: 1px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../assets/icons/Z.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-logo--container, .header--title {
     position: relative;
     margin: 0 auto;
-    padding: 10px;
-    color: black;
+    padding: 10px 20px;
     text-align: center;
 }
 .header-logo--container h1 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 2.4rem;
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: 2.6rem;
+    color: var(--warmblackplus);
 }
-.header-title {
+.header--title {
+    margin-top: 20px;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.6rem;
+    color: var(--warmblack);
+}
+main {
+    width: 100%;
+    min-height: 250px;
+    height: auto;
+}
+.main-offers--container {
+    position: relative;
+    width: 100%;
+    min-width: 250px;
+    height: 350px;
+    padding-top: 20px;
+    background-color: var(--offwhite);
+    text-align: center;
+}
+.main-offers--container .offers--title {
+    display: inline-block;
+    width: 70%;
+    min-width: 250px;
+    max-width: 600px;
+}
+.main-offers--container .offers--title h2 {
+    margin: 0 auto;
+    padding-top: 25px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--aquamarine);
+}
+.main-offers--container .offers--title p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: var(--lightingblue);
+}
+.main-offers--container .offers-to--products {
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 110px);
+    width: 220px;
+    height: 40px;
+    font-family: 'Lato';
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 0.6rem;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);   
 }
