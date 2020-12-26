@@ -24,7 +24,7 @@ html {
 header {
     padding-top: 20px;
     width: 100%;
-    height: 65vh;
+    height: 62vh;
     background: var(--header);
 }
 .header-logo--container .header-logo--zgym {
@@ -87,7 +87,7 @@ main {
     min-width: 250px;
     height: 350px;
     padding-top: 20px;
-    background-color: var(--reddragon);
+    background: linear-gradient(180deg, var(--goldpride), var(--reddragon));
     text-align: center;
 }
 .main-offers--container .offers--title {
