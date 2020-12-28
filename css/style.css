@@ -86,7 +86,6 @@ main {
     width: 100%;
     min-width: 250px;
     height: 340px;
-    background: var(--reddragon);
     text-align: center;
 }
 .main-news--container .news-to--products {
@@ -126,10 +125,11 @@ main {
 .main-news--container .news-container--slides .news-permanent--2x1 {
     position: relative;
     scroll-snap-align: center;
-    width: 100%;
+    width: 100vh;
     min-width: 320px;
     max-width: 700px;
     height: 340px;
+    background-color: var(--reddragon);
     text-align: right;
 }
 .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
@@ -186,7 +186,7 @@ main {
 .main-news--container .news-container--slides .news-covid--policies {
     position: relative;
     scroll-snap-align: center;
-    width: 100%;
+    width: 100vh;
     min-width: 320px;
     max-width: 700px;
     height: 340px;
