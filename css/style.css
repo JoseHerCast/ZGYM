@@ -71,9 +71,9 @@ header {
 }
 .header--title {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: var(--warmblack);
 }
 main {
@@ -86,7 +86,6 @@ main {
     width: 100%;
     min-width: 250px;
     height: 340px;
-    background: var(--reddragon);
     text-align: center;
 }
 .main-news--container .news-to--products {
@@ -126,19 +125,66 @@ main {
 .main-news--container .news-container--slides .news-permanent--2x1 {
     position: relative;
     scroll-snap-align: center;
-    width: 100%;
-    min-width: 320px;
-    max-width: 700px;
     height: 340px;
+    background-color: var(--reddragon);
     text-align: right;
 }
+/*Ajuste del scroll a los distintos tamaños de pantalla de smartphones*/
+@media only screen and (max-width: 425px) {
+    .main-news--container .news-container--slides .news-permanent--2x1 {
+        min-width: 425px;
+    }
+    .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
+        right: 30px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .main-news--container .news-container--slides .news-permanent--2x1 {
+        min-width: 375px;
+    }
+    .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-news--container .news-container--slides .news-permanent--2x1 {
+        min-width: 320px;
+    }
+    .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
+        right: 10px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .main-news--container .news-container--slides .news-covid--policies {
+        min-width: 425px;
+    }
+    .main-news--container .news-container--slides .news-covid--policies .covid-policies--title {
+        left: 30px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .main-news--container .news-container--slides .news-covid--policies {
+        min-width: 375px;
+    }
+    .main-news--container .news-container--slides .news-covid--policies .covid-policies--title {
+        left: 20px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .main-news--container .news-container--slides .news-covid--policies {
+        min-width: 320px;
+    }
+    .main-news--container .news-container--slides .news-covid--policies .covid-policies--title {
+        left: 10px;
+    }
+}
+/**/
 .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
     position: relative;
     top: 20px;
-    right: 10px;
     display: inline-block;
     z-index: 1;
-    width: 172px;
+    width: 50%;
     height: 300px;
     padding: 20px;
     padding-right: 20px;
@@ -153,10 +199,10 @@ main {
 }
 .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title p {
     padding-top: 45px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.2rem;
-    color: var(--warmblack);
+    line-height: 2rem;
+    color: var(--warmblackplus);
 }
 .main-news--container .news-container--slides .news-permanent--2x1 .vegeta--shadow {
     position: absolute;
@@ -186,9 +232,6 @@ main {
 .main-news--container .news-container--slides .news-covid--policies {
     position: relative;
     scroll-snap-align: center;
-    width: 100%;
-    min-width: 320px;
-    max-width: 700px;
     height: 340px;
     text-align: left;
     background-image: url(../assets/imgs/policies_covid_small.jpg);
@@ -200,10 +243,9 @@ main {
 .main-news--container .news-container--slides .news-covid--policies .covid-policies--title {
     position: relative;
     top: 20px;
-    left: 15px;
     display: inline-block;
     z-index: 1;
-    width: 172px;
+    width: 50%;
     height: 300px;
     padding: 20px;
     padding-right: 20px;
@@ -216,9 +258,9 @@ main {
 }
 .main-news--container .news-container--slides .news-covid--policies .covid-policies--title p {
     padding-top: 40px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.2rem;
+    line-height: 2rem;
     color: var(--warmblackplus);
 }
 .main-news--container .news-container--slides .news-covid--policies .arrow-left {
@@ -235,9 +277,88 @@ main {
 }
 .main-features--container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
     min-width: 250px;
-    height: 720px;
+    height: auto;
     background: var(--warmblackplus);
+}
+.main-features--container .dragon-ball {
+    position: absolute;
+    top: -12px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/icons/dragon-ball.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-features--container h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: var(--goldpride);
+}
+.main-features--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    min-width: 260px;
+    max-width: 400px;
+    height: 172px;
     text-align: center;
+    border-radius: 1.2rem;
+    border: solid var(--reddragon);
+}
+.main-features--container h3 {
+    position: relative;
+    height: 24px;
+    top: calc(100% - 6px);
+    vertical-align: middle;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--goldpride);
+}
+.main-features--container .features-weight--card {
+    background-image: url(../assets/imgs/weight_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-features--container .features-box--card {
+    background-image: url(../assets/imgs/box_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-features--container .features-cardio--card {
+    background-image: url(../assets/imgs/cardio_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-features--container .features-lockers--card {
+    background-image: url(../assets/imgs/lockers_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-features--container .features-protein--card {
+    background-image: url(../assets/imgs/protein_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-features--container .features-control--card {
+    background-image: url(../assets/imgs/control_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
