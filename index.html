@@ -22,7 +22,7 @@
     </header>
     <main>
         <section class="main-news--container">
-            <button class="news-to--products">Conoce nuestras promociones <span></span></button>
+            <a href="#planes"><button class="news-to--products">Conoce nuestras promociones <span></span></button></a>
             <section class="news-container--slides">
                 <div class="news-permanent--2x1">
                     <span class="vegeta--shadow"></span>
@@ -96,17 +96,21 @@
                 <input class="tips-email--submit" type="submit" value="Vamos">
             </form>
         </section>
-        <section class="main-products--container">
+        <section id="planes" class="main-products--container">
             <span class="dragon-ball"></span>
             <h2 class="products-container--title">Elige tu plan</h2>
             <div class="products-container--plans">
+                <div class="gap">0</div>
                 <article class="plan-card--container">
+                    <span class="arrow-right"></span>
                     <h3>Semanal</h3>
                     <div class="card-container--price"><span>$</span><p>89</p></div>
                     <p class="card-container--description">Ven, prueba y convencete en nuestras instalaciones.</p>
                     <button>Inscríbete ahora</button>
                 </article>
                 <article class="plan-card--container">
+                    <span class="arrow-left"></span>
+                    <span class="arrow-right"></span>
                     <h3>Mensual</h3>
                     <div class="card-container--price"><span>$</span><p>299</p></div>
                     <p class="card-container--description">Comprueba que los primeros resultados se tienen el primer mes.</p>
@@ -114,11 +118,13 @@
                 </article>
                 <article class="plan-card--container">
                     <div class="card-container--recommended"><p>Recomendado</p></div>
+                    <span class="arrow-left"></span>
                     <h3>Anual</h3>
                     <div class="card-container--price"><span>$</span><p>2,999</p></div>
                     <p class="card-container--description">Observa como tu vida cambia en tan solo un año.</p>
                     <button>Inscríbete ahora</button>
                 </article>
+                <div class="gap">0</div>
             </div>
         </section>
     </main>
