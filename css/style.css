@@ -73,7 +73,7 @@ header {
     margin-top: 20px;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.8rem;
+    line-height: 4rem;
     color: var(--warmblack);
 }
 main {
@@ -100,7 +100,7 @@ main {
     font-weight: 400;
     border-radius: 0.6rem;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);   
 }
 .main-news--container .news-to--products span {
     position: relative;
@@ -287,9 +287,10 @@ main {
     height: auto;
     background: var(--warmblackplus);
 }
-.main-features--container .dragon-ball {
+.dragon-ball {
     position: absolute;
     top: -12px;
+    left: calc(50% - 12px);
     width: 24px;
     height: 24px;
     background-image: url(../assets/icons/dragon-ball.png);
@@ -299,17 +300,16 @@ main {
 }
 .main-features--container h2 {
     padding-top: 40px;
-    padding-bottom: 40px;
-    font-size: 2rem;
+    padding-bottom: 20px;
+    font-size: 2.4rem;
     font-weight: bold;
-    line-height: 2rem;
+    line-height: 2.6rem;
+    text-align: center;
     color: var(--goldpride);
 }
 .main-features--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
-    display: inline-block;
     margin: 20px;
     padding: 20px;
-    width: auto;
     min-width: 260px;
     max-width: 400px;
     height: 172px;
@@ -322,43 +322,154 @@ main {
     height: 24px;
     top: calc(100% - 6px);
     vertical-align: middle;
+    font-family: 'Lato';
     font-size: 1.4rem;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--goldpride);
+}
+.main-features--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .main-features--container .features-weight--card {
     background-image: url(../assets/imgs/weight_small.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 .main-features--container .features-box--card {
     background-image: url(../assets/imgs/box_small.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .main-features--container .features-cardio--card {
     background-image: url(../assets/imgs/cardio_small.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .main-features--container .features-lockers--card {
     background-image: url(../assets/imgs/lockers_small.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .main-features--container .features-protein--card {
     background-image: url(../assets/imgs/protein_small.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .main-features--container .features-control--card {
     background-image: url(../assets/imgs/control_small.jpg);
-    background-position: center;
+}
+.main-tips--container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: var(--reddragon);
+}
+.main-tips--container .tips-container--title {
+    padding: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--warmblack);
+}
+.main-tips--container .tips-container--tip {
+    min-width: 260px;
+    max-width: 400px;
+    height: 60px;
+    padding: 10px;
+}
+.main-tips--container .tips-container--tip p {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: var(--warmblackplus);
+}
+.main-tips--container .tips-tip--check {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 32px;
+    height: 24px;
+    margin-right: 10px;
+    background-image: url(../assets/icons/icons8-check-mark-48.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+}
+.main-tips--container form {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--warmblack);
+}
+.main-tips--container label {
+    display: block;
+}
+.main-tips--container .tips-email--submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Lato';
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 1.2rem;
+    border: none;
+    background-color: var(--warmblack);
+    color: var(--reddragon);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.main-tips--container #Correo {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 1.2rem;
+    border: none;
+    background-color: var(--warmblack);
+    color: var(--justwhite);
+}
+.main-products--container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: var(--goldpride);
+}
+.main-products--container .products-container--title {
+    padding: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--warmblack);
+}
+.main-products--container .products-container--plans {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-products--container .products-container--plans .plan-card--container {
+    position: relative;
+    scroll-snap-align: center;
+    min-width: 200px;
+    margin: 0 24px;
+    height: 250px;
+    padding: 20px;
+    background-color: var(--warmblack);
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.main-products--container .products-container--plans .plan-card--container h3 {
+    font-size: 2rem;
 }
