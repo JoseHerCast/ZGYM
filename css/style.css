@@ -49,7 +49,7 @@ header {
     left: 4px;
     top: 1px;
     display: inline-block;
-    width: 32px;
+    width: 38px;
     height: 32px;
     background-image: url(../assets/icons/Z.png);
     background-size: cover;
@@ -131,7 +131,9 @@ main {
     background-color: var(--reddragon);
     text-align: right;
 }
+
 /*Ajuste del scroll a los distintos tamaños de pantalla de smartphones*/
+
 @media only screen and (max-width: 425px) {
     .main-news--container .news-container--slides .news-permanent--2x1 {
         min-width: 425px;
@@ -180,7 +182,9 @@ main {
         left: 10px;
     }
 }
+
 /**/
+
 .main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
     position: relative;
     top: 20px;
@@ -279,9 +283,6 @@ main {
 }
 .main-features--container {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -309,7 +310,14 @@ main {
     text-align: center;
     color: var(--goldpride);
 }
-.main-features--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
+.features-cards--container, .tips-container-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.features-cards--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
     margin: 20px;
     padding: 20px;
     min-width: 260px;
@@ -329,7 +337,7 @@ main {
     font-weight: 700;
     color: var(--goldpride);
 }
-.main-features--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
+.features-cards--container .features-weight--card, .features-box--card, .features-cardio--card, .features-lockers--card, .features-protein--card, .features-control--card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,7 +547,7 @@ main {
     width: max-content;
     color: var(--goldpride);
 }
-.main-products--container .products-container--plans .plan-card--container .arrow-left, .arrow-right {
+.main-products--container .products-container--plans .plan-card--container .arrow-left, .main-products--container .products-container--plans .plan-card--container .arrow-right {
     position: absolute;
     display: inline-block;
     width: 16px;
@@ -558,4 +566,63 @@ main {
     top: calc(50% - 8px);
     background-image: url(../assets/icons/expand_arrow_right_w.png);
 }
-
+footer {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 20px;
+    height: auto;
+    background-color: var(--warmblackplus);
+}
+.footer-social--container, .footer-about--container, .footer-logo--container {
+    display: inline-block;
+    padding: 10px;
+}
+.footer-about--container {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+footer a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: var(--goldpride);
+    text-decoration: none;
+}
+.footer-about--container p, .footer-social--container p {
+    padding: 5px;
+}
+.footer-logo--container {
+    position: absolute;
+    bottom: 40px;
+    right: 44px;
+}
+.footer-logo--container .footer-logo--zgym {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-logo--container .footer-logo--zgym p {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--goldpride);
+    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+.footer-logo--container .footer-logo--zgym #Y {
+    color: var(--reddragon);
+}
+.footer-logo--container .footer-logo--zgym span {
+    position: relative;
+    left: 4px;
+    top: 1px;
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    background-image: url(../assets/icons/Z.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

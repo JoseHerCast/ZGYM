@@ -1,0 +1,7 @@
+.main-news--container .news-container--slides .news-permanent--2x1 .arrow-right, .main-news--container .news-container--slides .news-covid--policies .arrow-left, .main-products--container .products-container--plans .plan-card--container .arrow-left, .main-products--container .products-container--plans .plan-card--container .arrow-right {
+    width: 0px;
+    height: 0px;
+}
+.main-news--container .news-container--slides .news-permanent--2x1, .main-news--container .news-container--slides .news-covid--policies {
+    width: 50%;
+}

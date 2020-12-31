@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogspot</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/medium.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600;700&display=swap">
 </head>
 <body>
@@ -45,49 +46,56 @@
         <section class="main-features--container">
             <span class="dragon-ball"></span>
             <h2>¡Conoce tu nuevo gimnasio!</h2>
-            <article class="features-weight--card">
-                <h3>Peso integrado.</h3>
-            </article>
-            <article class="features-box--card">
-                <h3>Boxeo</h3>
-            </article>
-            <article class="features-cardio--card">
-                <h3>Cardio</h3>
-            </article>
-            <article class="features-lockers--card">
-                <h3>Lockers</h3>
-            </article>
-            <article class="features-protein--card">
-                <h3>Suplementos</h3>
-            </article>
-            <article class="features-control--card">
-                <h3>Control de peso</h3>
-            </article>
+            <div class="features-cards--container">
+                <article class="features-weight--card">
+                    <h3>Peso integrado.</h3>
+                </article>
+                <article class="features-box--card">
+                    <h3>Boxeo</h3>
+                </article>
+                <article class="features-cardio--card">
+                    <h3>Cardio</h3>
+                </article>
+                <article class="features-lockers--card">
+                    <h3>Lockers</h3>
+                </article>
+                <article class="features-protein--card">
+                    <h3>Suplementos</h3>
+                </article>
+                <article class="features-control--card">
+                    <h3>Control de peso</h3>
+                </article>
+            </div>
         </section>
         <section class="main-tips--container">
             <span class="dragon-ball"></span>
             <h2 class="tips-container--title">Mejora tu salud con ejercicio.</h2>
-            <article class="tips-container--tip"><span class="tips-tip--check"></span><p>Adelgaza saludablemente</p></article>
-            <article class="tips-container--tip">
-                <span class="tips-tip--check"></span>
-                <p>Disminuye el estrés</p>
-            </article>
-            <article class="tips-container--tip">
-                <span class="tips-tip--check"></span>
-                <p>Aumenta tu inmunidad</p>
-            </article>
-            <article class="tips-container--tip">
-                <span class="tips-tip--check"></span>
-                <p>Define tus músculos</p>
-            </article>
-            <article class="tips-container--tip">
-                <span class="tips-tip--check"></span>
-                <p>Duerme mejor</p>
-            </article>
-            <article class="tips-container--tip">
-                <span class="tips-tip--check"></span>
-                <p>¡Diviertete!</p>
-            </article>
+            <div class="tips-container-tips">
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>Adelgaza saludablemente</p>
+                </article>
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>Disminuye el estrés</p>
+                </article>
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>Aumenta tu inmunidad</p>
+                </article>
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>Define tus músculos</p>
+                </article>
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>Duerme mejor</p>
+                </article>
+                <article class="tips-container--tip">
+                    <span class="tips-tip--check"></span>
+                    <p>¡Diviertete!</p>
+                </article>
+            </div>
             <form action="">
                 <label for="Correo">
                     <span>Correo: </span>
@@ -128,6 +136,25 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <span class="dragon-ball"></span>
+        <section class="footer-social--container">
+            <a href=""><p>Facebook</p></a>
+            <a href=""><p>Instagram</p></a>
+            <a href=""><p>WhatsApp</p></a>
+            <a href=""><p>Twitter</p></a>
+            <a href=""><p>YouTube</p></a>
+        </section>
+        <section class="footer-about--container">
+            <a href=""><p>Quienes somos</p></a>
+            <a href=""><p>Contáctanos</p></a>
+        </section>
+        <div class="footer-logo--container">
+            <div class="footer-logo--zgym">
+                <span></span>
+                <p>G</p><p id="Y">Y</p><p>M</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
