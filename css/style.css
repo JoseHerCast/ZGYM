@@ -48,7 +48,7 @@ header {
     left: 4px;
     top: 1px;
     display: inline-block;
-    width: 32px;
+    width: 38px;
     height: 32px;
     background-image: url(../assets/icons/Z.png);
     background-size: cover;
@@ -240,4 +240,64 @@ main {
     height: 720px;
     background: var(--warmblackplus);
     text-align: center;
+}
+footer {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 20px;
+    height: auto;
+    background: linear-gradient(180deg, var(--goldpride), var(--reddragon));
+}
+.footer-social--container, .footer-about--container, .footer-logo--container {
+    display: inline-block;
+    padding: 10px;
+}
+.footer-about--container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+footer a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: var(--warmblack);
+    text-decoration: none;
+}
+.footer-about--container p, .footer-social--container p {
+    padding: 5px;
+}
+.footer-logo--container {
+    position: absolute;
+    bottom: 40px;
+    right: 24px;
+}
+.footer-logo--container .footer-logo--zgym {
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-logo--container .footer-logo--zgym p {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--goldpride);
+    text-shadow: -1px -1px 1px black, 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+.footer-logo--container .footer-logo--zgym #Y {
+    color: var(--reddragon);
+}
+.footer-logo--container .footer-logo--zgym span {
+    position: relative;
+    left: 4px;
+    top: 1px;
+    display: inline-block;
+    width: 28px;
+    height: 24px;
+    background-image: url(../assets/icons/Z.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
