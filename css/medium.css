@@ -3,5 +3,11 @@
     height: 0px;
 }
 .main-news--container .news-container--slides .news-permanent--2x1, .main-news--container .news-container--slides .news-covid--policies {
-    width: 50%;
+    min-width: 50%;
+}
+.main-news--container .news-container--slides .news-permanent--2x1 .permanent-2x1--title {
+    right: 0;
+}
+.main-news--container .news-container--slides .news-covid--policies .covid-policies--title {
+    left: 0;
 }
